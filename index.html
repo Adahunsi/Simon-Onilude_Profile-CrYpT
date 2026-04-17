@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <article data-testid="test-profile-card" aria-label="User profile card">
+
+        <!-- Issue / meta bar -->
+        <div class="issue-bar" aria-label="Card metadata">
+            <span class="issue-label">Profile / Vol. 01</span>
+            <time data-testid="test-user-time" aria-live="polite" aria-label="Current time in milliseconds"
+                aria-atomic="true" id="epoch-clock">—</time>
+        </div>
+
+        <!-- Main body -->
+        <div class="card-body">
+
+            <!-- Left aside -->
+            <aside class="card-aside">
+
+                <figure>
+                    <img data-testid="test-user-avatar"
+                        src="images/1767615379721.jpg"
+                        alt="Profile photo of Simon Onilude, a frontend developer" width="180" height="180" />
+                    <figcaption>Photo — Simon Onilude</figcaption>
+                </figure>
+
+                <nav data-testid="test-user-social-links" aria-label="Social media links">
+                    <p class="social-heading">Find me at</p>
+                    <ul>
+                        <li>
+                            <a data-testid="test-user-social-twitter" href="https://twitter.com/simononilude"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Twitter profile (opens in new tab)">
+                                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M4 4l16 16M20 4L4 20" />
+                                </svg>
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a data-testid="test-user-social-github" href="https://github.com/Adahunsi"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub profile (opens in new tab)">
+                                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                                GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a data-testid="test-user-social-linkedin" href="https://www.linkedin.com/in/simon-onilude-299036222"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="LinkedIn profile (opens in new tab)">
+                                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </aside>
+
+            <!-- Main content -->
+            <main class="card-main">
+
+                <header>
+                    <p class="name-eyebrow">Frontend Engineer</p>
+                    <h2 data-testid="test-user-name" aria-label="User name: Simon Onilude">
+                        Simon Onilude
+                    </h2>
+                    <p class="name-role">Dream It Build It — Lagos, NG</p>
+                </header>
+
+                <p data-testid="test-user-bio">
+                    I am a proactive and detail-oriented Web Developer with hands-on experience building responsive,
+                    user-focused web applications using Vue.js and Nuxt.js. I also have a foundational background in
+                    quality assurance and software testing. With a blend of technical expertise and problem-solving
+                    ability, I create user-friendly, visually appealing, and accessible web interfaces. I am eager to
+                    contribute to building fast, scalable, and engaging user experiences in any tech environment I find
+                    myself. — Currently hooked upon the HNG Internship programme and loving every challenge it throws at me.
+                </p>
+
+                <div class="lists-row">
+
+                    <section aria-labelledby="hobbies-label">
+                        <p id="hobbies-label" class="list-section-label hobbies-label">Hobbies</p>
+                        <ul data-testid="test-user-hobbies" aria-labelledby="hobbies-label">
+                            <li>Drumming</li>
+                            <li>Football</li>
+                            <li>Sightseeing</li>
+                            <li>Listening to music</li>
+                            <li>Conspiracy theories</li>
+                        </ul>
+                    </section>
+
+                    <section aria-labelledby="dislikes-label">
+                        <p id="dislikes-label" class="list-section-label">Dislikes</p>
+                        <ul data-testid="test-user-dislikes" aria-labelledby="dislikes-label">
+                            <li>Crowded places</li>
+                            <li>Tuwo</li>
+                            <li>9  - 5 </li>
+                        </ul>
+                    </section>
+
+                </div>
+
+            </main>
+        </div>
+
+        <!-- Card footer -->
+        <footer class="card-footer">
+            <span class="footer-tag">Frontend Track — Stage 1B</span>
+            <span class="footer-tag" aria-hidden="true">✦ &nbsp; HTML · CSS · JS</span>
+        </footer>
+
+    </article>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
