@@ -1,8 +1,8 @@
-// ── Epoch clock ───────────────────────────────────────────
-const clockEl = document.getElementById('epoch-clock');
+
+const timeMil = document.getElementById('epoch-clock');
 
 function updateClock() {
-  clockEl.textContent = Date.now() + ' ms';
+  timeMil.textContent = Date.now() + ' ms';
 }
 
 updateClock();
